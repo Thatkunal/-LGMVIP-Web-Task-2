@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .navbar button {
+    background-color:#5858d7 ;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+  
+  .user-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 16px;
+    padding: 15px;
+  }
+  
+  .user-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
